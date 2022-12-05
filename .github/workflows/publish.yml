@@ -32,6 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+            docker tag docker-image-demo:v1 docker.pkg.github.com/anouarlkrim/docker-image/docker-image-demo:v1
             docker login -u anouarlkrim -p dckr_pat_JpKyxH9PsbnC_kZUpyvmT0U0vQ4
             docker build . --tag ghcr.io/anouarlkrim/docker-image/docker-image-demo:v1
             docker run ghcr.io/anouarlkrim/docker-image/docker-image-demo:v1
