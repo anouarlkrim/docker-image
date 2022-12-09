@@ -1,6 +1,5 @@
 name: build
-permissions:
-  packages: write
+
 
 on:
   push:
